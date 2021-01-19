@@ -77,15 +77,43 @@ jacob.graduate();
 //login(userName, password) if correct, should log ("Welcome in, (username)")
 //login (get username, get this.password
 
-let username = prompt("set your username");
-let password = prompt("set your password");
-
-
 class User {
-    set userName(userName) {
+    constructor(){
+        this.username = "";
+        this.password = "";
+    }
+    set userName(username){
+        if(username.length > 4){
+            this.username = username
+        }
+    }
 
+    set passWord(password1){
+        let password = password1.split("");
+        let num = 0;
+        for(let i = 0 ; i < password.length; i++){
+            if(password[i] == 1 || password[i] == 2 || password[i] == 3 || password[i] == 4 || password[i] == 5 ||password[i] == 6 || password[i] == 7 || password[i] == 8 || password[i] == 9){
+                num++;
+            }
+            if(num > 0 && password.length > 5){
+                this.password = password1;
+            }
+        }
     }
 }
 
-user.userName = "jlkj" //cant be less than 5 characters
-user.pasword
+let hello = new User();
+hello.userName = "hellooo";
+hello.passWord ="1234jjfj";
+console.log(hello);
+
+
+class Login (inputusername, inputpassword) {
+    constructor()
+    get(hello.userName);
+    get(hello.passWord);
+    if((hello.userName = inputusername) && (hello.password = inputpassword)){
+        console.log("you have logged in")
+    }
+}
+
