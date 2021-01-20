@@ -108,12 +108,22 @@ hello.passWord ="1234jjfj";
 console.log(hello);
 
 
-class Login (inputusername, inputpassword) {
-    constructor()
-    get(hello.userName);
-    get(hello.passWord);
-    if((hello.userName = inputusername) && (hello.password = inputpassword)){
-        console.log("you have logged in")
+class Login{
+    
+    constructor(){
+        this.inputUsername = inputUsername;
+        this.inputPassword = inputPassword;
+        get(hello.userName);
+        get(hello.passWord);
+        let helloUser = hello.userName;
+        let helloPass = hello.passWord;
+    }
+    if(helloUser = inputusername && helloPass = inputpassword){
+        console.log("you have logged in");
     }
 }
 
+let loginTrial = new User ();
+loginTrial.inputPassword = "1234jjfj";
+loginTrial.inputUsername = "hellooo";
+console.log(loginTrial);
