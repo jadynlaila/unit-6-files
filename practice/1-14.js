@@ -109,7 +109,6 @@ console.log(hello);
 
 
 class Login{
-    
     constructor(){
         this.inputUsername = inputUsername;
         this.inputPassword = inputPassword;
